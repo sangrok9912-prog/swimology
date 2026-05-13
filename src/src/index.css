@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-primary: #003366;
+  --color-accent: #FF6B00;
+  --radius-custom: 2.5rem;
+}
+
+@layer utilities {
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pb-safe-offset-4 {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* --- Design Elements --- */
+  .btn-active-scale:active { transform: scale(0.95); transition: transform 0.1s; }
+  
+  .glass-header {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+  }
+
+  .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .card-shadow {
+      box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.06), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+  }
+
+  .brand-gradient {
+      background: linear-gradient(135deg, #003366 0%, #0055A4 100%);
+  }
+
+  .accent-gradient {
+      background: linear-gradient(135deg, #FF6B00 0%, #FF8C00 100%);
+  }
+
+  .social-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  }
+
+  /* --- Custom Animations --- */
+  @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); max-height: 0; }
+      to { opacity: 1; transform: translateY(0); max-height: 2000px; }
+  }
+  .animate-slide-down { animation: slideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+  
+  @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
+  .animate-fade-in { animation: fadeIn 0.4s ease-out forwards; }
+
+  @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+  }
+  .scale-in { animation: scaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+}
