@@ -5617,7 +5617,7 @@ const QUIZ_DATA = {
         <main id="content" class="flex-grow pt-24 pb-28 px-6"></main>
 
         <!-- Navigation Bar -->
-        <nav class="fixed bottom-0 left-0 w-full z-[60] bg-white border-t border-slate-100 pb-safe shadow-[0_-4px_20px_rgba(0,0,0,0.03)]">
+        <nav class="fixed bottom-0 left-0 w-full z-[60] bg-white border-t border-slate-200 pb-safe shadow-[0_-6px_30px_rgba(15,23,42,0.08)]">
             <div class="max-w-2xl mx-auto flex justify-around py-3">
                 <button onclick="navigate('home')" id="nav-home" class="nav-item flex flex-col items-center gap-1 w-1/4 transition-all text-slate-400">
                     <i data-lucide="home" class="w-5 h-5"></i>
@@ -6297,14 +6297,14 @@ const QUIZ_DATA = {
 
                     <!-- Hub Entry Grid -->
                     <div class="grid grid-cols-2 gap-4">
-                        <div onclick="navigate('theory')" class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md hover:border-slate-200 transition-all duration-300 btn-active cursor-pointer group">
+                        <div onclick="navigate('theory')" class="bg-white p-6 rounded-3xl border border-slate-200 shadow-xl shadow-blue-900/10 hover:shadow-2xl hover:shadow-blue-900/15 hover:border-slate-300 transition-all duration-300 btn-active cursor-pointer group">
                             <div class="w-11 h-11 rounded-2xl bg-slate-50 flex items-center justify-center mb-5 transition-colors group-hover:bg-primary/5">
                                 <i data-lucide="book-open" class="w-5.5 h-5.5 text-primary"></i>
                             </div>
                             <h3 class="font-extrabold text-[14.5px] text-slate-800 tracking-tight">이론 기출 교육</h3>
                             <p class="text-[10.5px] text-slate-400 font-bold mt-1.5">7과목 총 500문항</p>
                         </div>
-                        <div onclick="navigate('videos')" class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md hover:border-slate-200 transition-all duration-300 btn-active cursor-pointer group">
+                        <div onclick="navigate('videos')" class="bg-white p-6 rounded-3xl border border-slate-200 shadow-xl shadow-cyan-900/10 hover:shadow-2xl hover:shadow-cyan-900/15 hover:border-slate-300 transition-all duration-300 btn-active cursor-pointer group">
                             <div class="w-11 h-11 rounded-2xl bg-slate-50 flex items-center justify-center mb-5 transition-colors group-hover:bg-accent/10">
                                 <i data-lucide="play-circle" class="w-5.5 h-5.5 text-accent"></i>
                             </div>
@@ -6329,7 +6329,7 @@ const QUIZ_DATA = {
                     </a>
 
                     <!-- KMOU Lifelong Education Center Shortcut -->
-                    <a href="https://www.kmou.ac.kr/edu/main.do" target="_blank" class="w-full bg-white border border-slate-100 text-slate-700 rounded-3xl py-6 px-6 flex items-center justify-between font-bold text-sm btn-active shadow-sm border-l-4 border-l-primary/60 hover:shadow-md transition-all duration-300">
+                    <a href="https://www.kmou.ac.kr/edu/main.do" target="_blank" class="w-full bg-white border border-slate-200 text-slate-700 rounded-3xl py-6 px-6 flex items-center justify-between font-bold text-sm btn-active shadow-xl shadow-blue-900/10 border-l-4 border-l-primary hover:shadow-2xl hover:shadow-blue-900/15 transition-all duration-300">
                         <div class="flex items-center gap-4">
                             <div class="w-11 h-11 rounded-2xl bg-slate-50 flex items-center justify-center shrink-0">
                                 <i data-lucide="graduation-cap" class="w-5.5 h-5.5 text-primary"></i>
@@ -6343,7 +6343,7 @@ const QUIZ_DATA = {
                     </a>
 
                     <!-- Safe Office Portal Link -->
-                    <a href="https://imsm.kcg.go.kr/CLMS/" target="_blank" class="w-full bg-white border border-slate-100 text-slate-700 rounded-3xl py-6 px-6 flex items-center justify-between font-bold text-sm btn-active shadow-sm border-l-4 border-l-accent hover:shadow-md transition-all duration-300">
+                    <a href="https://imsm.kcg.go.kr/CLMS/" target="_blank" class="w-full bg-white border border-slate-200 text-slate-700 rounded-3xl py-6 px-6 flex items-center justify-between font-bold text-sm btn-active shadow-xl shadow-cyan-900/10 border-l-4 border-l-accent hover:shadow-2xl hover:shadow-cyan-900/15 transition-all duration-300">
                         <div class="flex items-center gap-4">
                             <div class="w-11 h-11 rounded-2xl bg-slate-50 flex items-center justify-center">
                                 <i data-lucide="external-link" class="w-5.5 h-5.5 text-accent"></i>
@@ -6422,7 +6422,7 @@ const QUIZ_DATA = {
                                 { id: 6, title: '6장 지도자의 자질', icon: 'user-check', bg: 'bg-blue-500/10', text: 'text-blue-500', sub: 'UNIT 06 • COACH' },
                                 { id: 7, title: '7장 생존수영', icon: 'waves', bg: 'bg-blue-500/10', text: 'text-blue-500', sub: 'UNIT 07 • SURVIVAL' }
                             ].map(u => `
-                                <div onclick="selectTheoryChapter(${u.id})" class="bg-white p-4.5 rounded-2xl border border-slate-100/80 shadow-sm flex items-center justify-between btn-active cursor-pointer group hover:border-slate-300 hover:shadow-md transition-all duration-300">
+                                <div onclick="selectTheoryChapter(${u.id})" class="bg-white p-4.5 rounded-2xl border border-slate-200/90 shadow-xl shadow-blue-900/5 flex items-center justify-between btn-active cursor-pointer group hover:border-slate-400 hover:shadow-2xl hover:shadow-blue-900/15 transition-all duration-300">
                                     <div class="flex items-center gap-4">
                                         <div class="w-11 h-11 rounded-xl ${u.bg} flex items-center justify-center shrink-0">
                                             <i data-lucide="${u.icon}" class="w-5.5 h-5.5 ${u.text}"></i>
@@ -6478,7 +6478,7 @@ const QUIZ_DATA = {
                     <!-- Option Selection Buttons -->
                     <div class="space-y-4 pt-2">
                         <!-- Button One: 📘 가이드북 확인하기 -->
-                        <button onclick="window.open('${getPdfUrl(ch.id)}')" class="w-full bg-white border border-slate-100 hover:border-slate-200 text-slate-800 py-5 px-6 rounded-2xl btn-active transition-all shadow-sm hover:shadow-md flex items-center justify-between gap-4 cursor-pointer">
+                        <button onclick="window.open('${getPdfUrl(ch.id)}')" class="w-full bg-white border border-slate-200/90 hover:border-slate-300 text-slate-800 py-5 px-6 rounded-2xl btn-active transition-all shadow-xl shadow-blue-900/10 hover:shadow-2xl hover:shadow-blue-900/15 flex items-center justify-between gap-4 cursor-pointer">
                             <div class="flex items-center gap-3.5">
                                 <div class="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">
                                     <i data-lucide="book-open" class="w-5.5 h-5.5"></i>
@@ -6492,7 +6492,7 @@ const QUIZ_DATA = {
                         </button>
  
                         <!-- Button Two: 🔟 단원별 랜덤 10문제 풀기 -->
-                        <button onclick="startQuiz(${ch.id}, 'random10')" class="w-full bg-white border border-slate-100 hover:border-slate-200 text-slate-800 py-5 px-6 rounded-2xl btn-active transition-all shadow-sm hover:shadow-md flex items-center justify-between gap-4 cursor-pointer">
+                        <button onclick="startQuiz(${ch.id}, 'random10')" class="w-full bg-white border border-slate-200/90 hover:border-slate-300 text-slate-800 py-5 px-6 rounded-2xl btn-active transition-all shadow-xl shadow-cyan-900/10 hover:shadow-2xl hover:shadow-cyan-900/15 flex items-center justify-between gap-4 cursor-pointer">
                             <div class="flex items-center gap-3.5">
                                 <div class="w-11 h-11 rounded-xl bg-cyan-50/80 flex items-center justify-center shrink-0 text-accent">
                                     <i data-lucide="help-circle" class="w-5.5 h-5.5"></i>
@@ -6506,7 +6506,7 @@ const QUIZ_DATA = {
                         </button>
  
                         <!-- Button Three: 🔄 전체 문제 순서대로 다 풀기 -->
-                        <button onclick="startQuiz(${ch.id}, 'sequential')" class="w-full bg-white border border-slate-100 hover:border-slate-200 text-slate-800 py-5 px-6 rounded-2xl btn-active transition-all shadow-sm hover:shadow-md flex items-center justify-between gap-4 cursor-pointer">
+                        <button onclick="startQuiz(${ch.id}, 'sequential')" class="w-full bg-white border border-slate-200/90 hover:border-slate-300 text-slate-800 py-5 px-6 rounded-2xl btn-active transition-all shadow-xl shadow-blue-900/10 hover:shadow-2xl hover:shadow-blue-900/15 flex items-center justify-between gap-4 cursor-pointer">
                             <div class="flex items-center gap-3.5">
                                 <div class="w-11 h-11 rounded-xl bg-blue-55/40 flex items-center justify-center shrink-0 text-blue-600" style="background-color: rgba(30, 58, 138, 0.05)">
                                     <i data-lucide="refresh-cw" class="w-5.5 h-5.5"></i>
